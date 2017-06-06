@@ -30,7 +30,7 @@ if let fileContents = gradeIOManager.readContents() {
     }
 }
 
-// resultText 에 결과를
+// resultText 에 작업 결과를 저장
 var resultText : String = ""
 resultText += "성적결과표\n\n"
 resultText += "전체 평균 : \(gradeManager.totalAverageGrade().format(f: ".2"))\n\n"
