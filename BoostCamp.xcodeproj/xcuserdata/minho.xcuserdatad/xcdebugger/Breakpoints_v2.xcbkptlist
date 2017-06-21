@@ -29,8 +29,40 @@
             timestampString = "518423414.190274"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "GradeManager"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BoostCamp/entity.swift"
+            timestampString = "519746662.55965"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "102"
+            endingLineNumber = "102"
+            landmarkName = "init(name:gradeInformation:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BoostCamp/control.swift"
+            timestampString = "519723027.77457"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
             landmarkName = "appendGradeOfStudent(data:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -42,12 +74,75 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BoostCamp/control.swift"
-            timestampString = "518423414.190274"
+            timestampString = "519745495.323197"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
-            landmarkName = "appendGradeOfStudent(data:)"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "studentsPassed()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BoostCamp.GradeManager.studentsPassed () -&gt; Swift.String"
+                  moduleName = "BoostCamp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/minho/Documents/SwiftExample/BoostCamp/BoostCamp/control.swift"
+                  timestampString = "519746443.002715"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "407">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BoostCamp.GradeManager.(studentsPassed () -&gt; Swift.String).(closure #1)"
+                  moduleName = "BoostCamp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/minho/Documents/SwiftExample/BoostCamp/BoostCamp/control.swift"
+                  timestampString = "519746443.006072"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BoostCamp.GradeManager.(studentsPassed () -&gt; Swift.String).(closure #2)"
+                  moduleName = "BoostCamp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/minho/Documents/SwiftExample/BoostCamp/BoostCamp/control.swift"
+                  timestampString = "519746443.007939"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "24">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BoostCamp/entity.swift"
+            timestampString = "519746662.55965"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "148"
+            endingLineNumber = "148"
+            landmarkName = "printGradeResult()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

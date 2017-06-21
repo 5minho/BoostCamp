@@ -11,6 +11,7 @@
 		5A98CF9F1EE5269C008EF3ED /* entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A98CF9E1EE5269C008EF3ED /* entity.swift */; };
 		5A98CFA31EE532CF008EF3ED /* control.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A98CFA21EE532CF008EF3ED /* control.swift */; };
 		5A98CFA51EE5646A008EF3ED /* io.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A98CFA41EE5646A008EF3ED /* io.swift */; };
+		5AEDC30D1EFAB58200A590B5 /* enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEDC30C1EFAB58200A590B5 /* enum.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,7 @@
 		5A98CF9E1EE5269C008EF3ED /* entity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = entity.swift; sourceTree = "<group>"; };
 		5A98CFA21EE532CF008EF3ED /* control.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = control.swift; sourceTree = "<group>"; };
 		5A98CFA41EE5646A008EF3ED /* io.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = io.swift; sourceTree = "<group>"; };
+		5AEDC30C1EFAB58200A590B5 /* enum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = enum.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				5A98CF9E1EE5269C008EF3ED /* entity.swift */,
 				5A98CFA21EE532CF008EF3ED /* control.swift */,
 				5A98CFA41EE5646A008EF3ED /* io.swift */,
+				5AEDC30C1EFAB58200A590B5 /* enum.swift */,
 			);
 			path = BoostCamp;
 			sourceTree = "<group>";
@@ -98,7 +101,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "오민호";
 				TargetAttributes = {
 					5A5455391EDFEBDC00463357 = {
@@ -129,6 +132,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AEDC30D1EFAB58200A590B5 /* enum.swift in Sources */,
 				5A54553E1EDFEBDC00463357 /* main.swift in Sources */,
 				5A98CF9F1EE5269C008EF3ED /* entity.swift in Sources */,
 				5A98CFA31EE532CF008EF3ED /* control.swift in Sources */,
@@ -157,6 +161,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -205,6 +210,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -224,6 +230,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
 		};
