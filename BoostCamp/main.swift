@@ -10,23 +10,22 @@ import Foundation
 
 //학생들 점수 타입
 typealias GradeType = Double
-//결과 타입
-typealias ResultType = String
-
 //합격기준 70.0 인 성적관리클래스 생성
-let gradeManager = GradeManager(passCriteria: 70.0)
+let gradeManager = GradeManager()
 //입력파일 "students.json", 출력파일 "result.txt" 인 성적입출력관리클래스 생성
 let gradeIOManager = GradeIOManager(srcFileName: "students.json", desFileName: "result.txt")
 
-if let fileContents = gradeIOManager.readContents() {
-    if let data = try? JSONSerialization.jsonObject(with: fileContents) as? [Any],
-        let anyArrayBinded = data {
-        for case let jsonData in anyArrayBinded {
-            if let studentData = jsonData as? [String : Any] {
-                gradeManager.appendGradeOfStudent(data: studentData)
-            }
-        }
+func jsonToStudentGradeObject(fileContents : Data?) {
+    guard let data = try? JSONSerialization.jsonObject(with: fileContents!) as? [Any] else {return }
+    guard let anyArray = data else {return }
+    for case let jsonData in anyArray {
+        guard let studentData = jsonData as? [String : Any] else {return}
+        gradeManager.appendGradeOfStudent(data: studentData)
     }
+}
+
+if let fileContents = gradeIOManager.readContents() {
+    jsonToStudentGradeObject(fileContents: fileContents)
 }
 
 // resultText 에 작업 결과를 저장

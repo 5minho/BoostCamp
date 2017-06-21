@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		5A54553E1EDFEBDC00463357 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A54553D1EDFEBDC00463357 /* main.swift */; };
-		5A98CF9F1EE5269C008EF3ED /* entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A98CF9E1EE5269C008EF3ED /* entity.swift */; };
-		5A98CFA31EE532CF008EF3ED /* control.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A98CFA21EE532CF008EF3ED /* control.swift */; };
-		5A98CFA51EE5646A008EF3ED /* io.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A98CFA41EE5646A008EF3ED /* io.swift */; };
+		5A98CF9F1EE5269C008EF3ED /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A98CF9E1EE5269C008EF3ED /* Student.swift */; };
+		5A98CFA31EE532CF008EF3ED /* GradeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A98CFA21EE532CF008EF3ED /* GradeManager.swift */; };
+		5A98CFA51EE5646A008EF3ED /* GradeIOManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A98CFA41EE5646A008EF3ED /* GradeIOManager.swift */; };
 		5AEDC30D1EFAB58200A590B5 /* enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEDC30C1EFAB58200A590B5 /* enum.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,9 +29,9 @@
 /* Begin PBXFileReference section */
 		5A54553A1EDFEBDC00463357 /* BoostCamp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BoostCamp; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A54553D1EDFEBDC00463357 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		5A98CF9E1EE5269C008EF3ED /* entity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = entity.swift; sourceTree = "<group>"; };
-		5A98CFA21EE532CF008EF3ED /* control.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = control.swift; sourceTree = "<group>"; };
-		5A98CFA41EE5646A008EF3ED /* io.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = io.swift; sourceTree = "<group>"; };
+		5A98CF9E1EE5269C008EF3ED /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		5A98CFA21EE532CF008EF3ED /* GradeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradeManager.swift; sourceTree = "<group>"; };
+		5A98CFA41EE5646A008EF3ED /* GradeIOManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradeIOManager.swift; sourceTree = "<group>"; };
 		5AEDC30C1EFAB58200A590B5 /* enum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = enum.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,9 +66,9 @@
 			isa = PBXGroup;
 			children = (
 				5A54553D1EDFEBDC00463357 /* main.swift */,
-				5A98CF9E1EE5269C008EF3ED /* entity.swift */,
-				5A98CFA21EE532CF008EF3ED /* control.swift */,
-				5A98CFA41EE5646A008EF3ED /* io.swift */,
+				5A98CF9E1EE5269C008EF3ED /* Student.swift */,
+				5A98CFA21EE532CF008EF3ED /* GradeManager.swift */,
+				5A98CFA41EE5646A008EF3ED /* GradeIOManager.swift */,
 				5AEDC30C1EFAB58200A590B5 /* enum.swift */,
 			);
 			path = BoostCamp;
@@ -134,9 +134,9 @@
 			files = (
 				5AEDC30D1EFAB58200A590B5 /* enum.swift in Sources */,
 				5A54553E1EDFEBDC00463357 /* main.swift in Sources */,
-				5A98CF9F1EE5269C008EF3ED /* entity.swift in Sources */,
-				5A98CFA31EE532CF008EF3ED /* control.swift in Sources */,
-				5A98CFA51EE5646A008EF3ED /* io.swift in Sources */,
+				5A98CF9F1EE5269C008EF3ED /* Student.swift in Sources */,
+				5A98CFA31EE532CF008EF3ED /* GradeManager.swift in Sources */,
+				5A98CFA51EE5646A008EF3ED /* GradeIOManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -4,20 +4,15 @@
 //
 //  Created by 오민호 on 2017. 6. 5..
 //  Copyright © 2017년 오민호. All rights reserved.
-//
-
-// 성적 계산을 위한 클래스들을 정의한 swift 파일
 
 //성적관리 클래스
 class GradeManager {
     var students : [Student]
-    var sortedStudents : [Student]? = nil
-    var passCriteria : GradeType
+    var sortedStudents : [Student]?
     
-    init(passCriteria : GradeType) {
+    init() {
         students = []
         sortedStudents = nil
-        self.passCriteria = passCriteria
     }
     
     //학생, 점수 추가 함수

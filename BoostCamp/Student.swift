@@ -6,7 +6,6 @@
 //  Copyright © 2017년 오민호. All rights reserved.
 //
 
-// 데이터적인 성격이 강한 구조체들을 정의한 swift 파일
 import Foundation
 
 //학생 클래스
@@ -76,6 +75,7 @@ extension Student : Hashable {
         return name.hash
     }
 }
+
 //해당 문제에서 추가 요구사항전까지는 이름을 기준으로 학생들을 구분함
 func == (lhs : Student, rhs : Student) -> Bool {
     return lhs.name == rhs.name
