@@ -7,13 +7,66 @@
 //
 
 // 데이터적인 성격이 강한 구조체들을 정의한 swift 파일
+import Foundation
 
-//학생 구조체
-struct Student {
-    var name : String
+//학생 클래스
+class Student {
+    let name : String
+    var grades : [Subject]
+    var average : Double
+    var gradeResult : GradeResult?
     
-    init(name : String) {
+    init(name : String, gradeInformation: [String : GradeType]) throws {
+        self.average = 0
         self.name = name
+        grades = []
+        do {
+            try setGrades(gradeInformation: gradeInformation)
+        }
+        catch {
+            throw GradeParseError.unknownGrade
+        }
+    }
+    
+    func setGrades(gradeInformation : [String : GradeType]) throws {
+        for (subjectName, grade) in gradeInformation {
+            switch subjectName {
+            case "data_structure":
+                grades.append(Subject.data_structure(grade))
+            case "algorithm":
+                grades.append(Subject.algorithm(grade))
+            case "networking":
+                grades.append(Subject.networking(grade))
+            case "database":
+                grades.append(Subject.database(grade))
+            case "operating_system":
+                grades.append(Subject.operating_system(grade))
+            default:
+                throw GradeParseError.unknownGrade
+            }
+        }
+    }
+    
+    func calcGradeAverage() -> GradeType{
+        let average = grades.reduce(0.0){$0 + $1.value()} / GradeType(grades.count)
+        switch average {
+        case 90.0 ... 100.0 :
+            gradeResult = GradeResult.A(average)
+        case 80.0 ... 90.0 :
+            gradeResult = .B(average)
+        case 70.0 ... 80.0 :
+            gradeResult = .C(average)
+        case 60.0 ... 70.0 :
+            gradeResult = .D(average)
+        default :
+            gradeResult = .F(average)
+        }
+        return average
+    }
+    
+    func printGradeResult() -> String {
+        guard let result = self.gradeResult else {return ""}
+        return String(format:"%-11s", (self.name as NSString).utf8String!) + ": \(result.string())\n"
     }
 }
 
@@ -33,39 +86,5 @@ func < (lhs : Student, rhs : Student) -> Bool {
     return lhs.name < rhs.name
 }
 
-//과목들
-enum Subject : Int {
-    case data_structure = 0
-    case algorithm
-    case networking
-    case database
-    case operating_system
-    case unknown_subject
-}
 
-// Grade 구조체
-struct Grade {
-    //과목
-    var subjectId : Subject
-    //과목 점수
-    var subjectGrade : GradeType
-    
-    init(subject : String, subjectGrade : GradeType) {
-        self.subjectId = Subject.unknown_subject
-        switch subject {
-        case "data_structure":
-            self.subjectId = Subject.data_structure
-        case "algorithm":
-            self.subjectId = .algorithm
-        case "networking":
-            self.subjectId = .networking
-        case "database":
-            self.subjectId = .database
-        case "operating_system":
-            self.subjectId = .operating_system
-        default:
-            print("해당 과목은 없습니다")
-        }
-        self.subjectGrade = subjectGrade
-    }
-}
+
